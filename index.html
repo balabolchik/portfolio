@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Oleg Bordulyak</title>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <div id="home" class="navItem"><div>Home<span></span><span></span></div></div>
+            <div id="about" class="navItem"><div>About<span></span><span></span></div></div>
+            <div id="works" class="navItem"><div>Works<span></span><span></span></div></div>
+            <div id="skills" class="navItem"><div>Skills<span></span><span></span></div></div>
+            <div id="contacts" class="navItem active"><div>Contact<span></span><span></span></div></div>
+        </div>
+    </nav>
+    <content>
+        <section class="home contentUnit">
+            <header>
+                <div class="text animated">
+                    <p>
+                        Hello, my name is
+                    </p>
+                    <span>Oleg Bordulyak</span>
+                    <p>
+                         and I'm Junior Front-End developer!
+                    </p>
+                </div>
+            </header>
+        </section>
+        <section class="about contentUnit">
+            <header>
+                <div class="text animated"><span>about me</span></div>
+            </header>
+            <div class="content animated">
+                <img class="animated hideAgain" src="./img/MyPhoto.jpg" alt="My Photo">
+                <h1>Oleg Bordulyak</h1>
+                <p>
+                    Hello, everything! There I would like to tell you about myself. I'm 23 years old. I'm from village in Lviv region. But I living in Poltava now.
+                </p>
+                <p>
+                    I graduated from Lviv Polytechnic National University. My specialty is a Chemistry Technologist of Silicium Materials. After graduating the University
+                    I decided to try myself in programming. I successfully passed a course from Softserve IT-academy "HTML5 / CSS3 / JAVASCRIPT FUNDAMENTALS". I continue to evolve in frontend 
+                    development and keep learning something new in this area. Also I learn English.
+                </p>
+                <p>
+                    Now I work in my specialty at the factory of medical glass in Poltava. I like my job. But most of all I want to work as a programmer.
+                </p>
+            </div>
+        </section>
+        <section class="works contentUnit">
+            <header>
+                <div class="text animated"><span>my works</span></div>
+            </header>
+            <div class="content"></div>
+        </section>
+        <section class="skills contentUnit">
+            <header>
+                <div class="text animated"><span>My skills</span></div>
+            </header>
+            <div class="content"></div>
+        </section>
+        <section class="contacts contentUnit active">
+            <header>
+                <div class="text animated">
+                    <p>Do you have any questions?</p>
+                    <span>contact me</span></div>
+            </header>
+            <div class="content">
+                <form onsubmit="return false" class="contactForm animated">
+                    <label><span>Name: </span><input type="text" placeholder="Your Name" required></label>
+                    <label><span>Surname: </span><input type="text" placeholder="Your Surname" required></label>
+                    <label><span>Your contact: </span><input type="text" placeholder="Email or phone" required></label>
+                    <label><span>Message subject: </span><input type="text" placeholder="Subject message"></label>
+                    <label><span>Your message: </span>
+                        <textarea placeholder="Your message" required></textarea>
+                    </label>
+                    <button onclick="blur()" class="contactFormSend">SEND</button>
+                </form>
+            </div>
+        </section>
+    </content>
+
+
+    <footer>
+        <div class="social">
+            <div><a target="_blank" href="https://www.facebook.com/profile.php?id=100008492821454"><i class="fab fa-facebook-f"></i></a></div>
+            <div><a target="_blank" href="https://www.instagram.com/0leg_10/"><i class="fab fa-instagram"></i></a></div>
+            <div><a target="_blank" href="https://www.linkedin.com/in/balabolchik/"><i class="fab fa-linkedin-in"></i></a></div>
+            <div><a target="_blank" href="https://github.com/balabolchik"><i class="fab fa-github"></i></a></div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/cb928d3ea4.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

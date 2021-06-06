@@ -1,0 +1,58 @@
+$green:#16a085;
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px 1.67%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    .nav {
+        width: 40%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        .navItem {
+            user-select: none;
+            padding: 15px 0px;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            color: white;
+            z-index: 4;
+            &:hover {
+                cursor: pointer;
+            }
+            &.active {
+                color: $green;
+                & div span,
+                & div span:last-child {
+                    transform: translate(0%, 0%);
+                }
+            }
+            & div {
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
+                transition: all 0.3s linear;
+                font-size: 0.75rem;
+                & span {
+                    display: inline-block;
+                    height: 2px;
+                    background: $green;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 50%;
+                    transform: translate(-200%, 0);
+                    transition: all 0.4s linear;
+                    &:last-child {
+                        left: 50%;
+                        right: 0%;
+                        transform: translate(200%, 0);
+                    }
+                }
+            }
+        }
+    }
+}

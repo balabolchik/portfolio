@@ -1,0 +1,61 @@
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: {
+        repeat: no-repeat;
+        size: cover;
+        position: center center;
+        attachment: fixed;
+    }
+    & .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        text-shadow: -1px -1px 7px black;
+        & span {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 3rem;
+            text-align: center;
+            font-weight: 900;
+            padding: 20px 0px;
+        }
+
+        &.animated {
+            * {
+                opacity: 0;
+                transform: translate(0, 120%);
+            }
+            .active &.animationActive * {
+                opacity: 1;
+                transform: translate(0, 0%);
+            }
+        }
+
+        @for $i from 1 through 3 {
+            & > *:nth-child(#{$i}) { 
+                transition: all 0.7s cubic-bezier(0.39, 0.58, 0.57, 1) calc((#{$i} - 1) * 0.6s);
+            }
+        }
+        
+    }
+    .home & {
+        background-image: url("../../img/home_header.jpg");
+    }
+    .about & {
+        background-image: url("../../img/about_header.jpg");
+    }
+    .works & {
+        background-image: url("../../img/works.jpg");
+    }
+    .skills & {
+        background-image: url("../../img/skills.jpg");
+    }
+    .contacts & {
+        background-image: url("../../img/contacts.jpg");
+    }
+}
