@@ -107,13 +107,13 @@ header .text.animated * {
   transform: translate(0, 0%);
 }
 header .text > *:nth-child(1) {
-  transition: all 0.7s cubic-bezier(0.39, 0.58, 0.57, 1) calc((1 - 1) * 0.6s);
+  transition: all 0.7s cubic-bezier(0.39, 0.58, 0.57, 1) calc((1 - 1) * 0.5s);
 }
 header .text > *:nth-child(2) {
-  transition: all 0.7s cubic-bezier(0.39, 0.58, 0.57, 1) calc((2 - 1) * 0.6s);
+  transition: all 0.7s cubic-bezier(0.39, 0.58, 0.57, 1) calc((2 - 1) * 0.5s);
 }
 header .text > *:nth-child(3) {
-  transition: all 0.7s cubic-bezier(0.39, 0.58, 0.57, 1) calc((3 - 1) * 0.6s);
+  transition: all 0.7s cubic-bezier(0.39, 0.58, 0.57, 1) calc((3 - 1) * 0.5s);
 }
 .home header {
   background-image: url("./../../img/home_header.jpg");
